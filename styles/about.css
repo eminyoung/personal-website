@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
 
 body {
+
     display: flex;
     flex-direction: column;
     font-family: "Parkinsans", serif;
 }
 * {
-    margin: 0;
+    margin: 0px;
     box-sizing: border-box;
 }
 
@@ -42,72 +43,52 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
 }
+
+
 
 .logo {
     position: absolute;
-    left: 45%;
+    left: 46%;
     top: 3%;
 }
 
-.title {
-    font-size: xxx-large;
-    font-style: italic;
-}
-.cards {
+.profile {
+    border: 1px dimgray solid;
+    border-radius: 60px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.card {
-    position: relative;
-    justify-content: center;
-    gap: 50px;
+    padding: 5px 10px;
+    gap: 5px;
     align-items: center;
-    transition: 0.3s;
-    border-radius: 20px;
+    justify-content: center;
+}
+.profile a {
+    height: 35px;
+}
+.profile img {
+    width: 35px;
+    opacity: 73%;
 }
 
-.card:hover {
-    border: 1px darkgray solid;
-}
-.desc {
+.container .right{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 500px;
-    padding: 20px;
-}
-.desc p {
-    color: dimgray;
+    gap: 15px;
+    width: calc(70vw/3);
 }
 
-.desc .tags{
+.container .left {
+    max-width: calc(70vw/3);
+    font-size: xxx-large;
+}
+
+.main {
     display: flex;
     flex-direction: row;
-    gap: 5px;
-}
-
-.desc .tag {
-    border: 1px dimgray solid;
-    color: dimgray;
-    border-radius: 50px;
-    padding: 3px 10px;
-    font-size: small;
-}
-
-a {
-    color: #2b58a6;
-}
-
-video {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
