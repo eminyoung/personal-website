@@ -76,7 +76,8 @@ body {
 }
 
 .card:hover {
-    border: 1px darkgray solid;
+    outline: 1px darkgray solid;
+    cursor: pointer;
 }
 .desc {
     display: flex;
@@ -107,7 +108,7 @@ a {
     color: #2b58a6;
 }
 
-video {
+.media img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
