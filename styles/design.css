@@ -78,6 +78,7 @@ body {
 .card:hover {
     outline: 1px darkgray solid;
     cursor: pointer;
+    transform: scale(1.02);
 }
 .desc {
     display: flex;
@@ -111,4 +112,15 @@ a {
 .media img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+.more {
+    color: dimgray;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.more:hover{
+    color: darkgray;
+    letter-spacing: 1px;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Emily's Little Corner</title>
     <link rel="stylesheet" href="../styles/code.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <a href="index.html"><img src="../img/logo.png" class="logo" alt="logo" style="width:100px;"></a>
@@ -24,7 +25,7 @@
         <div class="cards">
             <div class="card">
                 <div class="media">
-                    <video controls autoplay loop width="500"><source src="../img/code/spotifyWrapped.mp4" type="video/mp4"></video>
+                    <video muted loop width="500" class="vid"><source src="../img/code/spotifyWrapped.mp4" type="video/mp4"></video>
                 </div>
                 <div class="desc">
                     <h3>Tarot Spotify Wrapped</h3>
@@ -33,12 +34,13 @@
                     <div class="tags">
                         <div class="tag">HTML</div><div class="tag">CSS</div><div class="tag">JavaScript</div><div class="tag">Frontend</div>
                     </div>
+                    <p><a href="projects/spotify.html" class="more">Learn more <i class="fas fa-long-arrow-alt-right"></i></a></p>
                 </div>
             </div>
 
             <div class="card">
                 <div class="media">
-                    <video controls autoplay loop width="500"><source src="../img/code/hungryHippo.mp4" type="video/mp4"></video>
+                    <video muted loop width="500" class="vid"><source src="../img/code/hungryHippo.mp4" type="video/mp4"></video>
                 </div>
                 <div class="desc">
                      <h3>Hungry Hungry Hippo</h3>
@@ -52,7 +54,7 @@
 
             <div class="card">
                 <div class="media">
-                    <video controls autoplay loop width="500"><source src="../img/code/website.mp4" type="video/mp4"></video>
+                    <video muted loop width="500" class="vid"><source src="../img/code/website.mp4" type="video/mp4"></video>
                 </div>
                 <div class="desc">
                      <h3>Personal Website</h3>
@@ -65,5 +67,27 @@
         </div>
 
     </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const vidContainer = document.querySelectorAll('.card');
+
+    vidContainer.forEach((vidCon) => {
+        const video = vidCon.querySelector('video');
+        vidCon.addEventListener('mouseenter', () => playVideo(video));
+        vidCon.addEventListener('mouseleave', () => stopVideo(video));
+    });
+    function playVideo(video) {
+        video.play();
+        console.log("play vid");
+    }
+
+    function stopVideo(video) {
+        video.pause();
+        video.currentTime = 0;
+        console.log("stop vid");
+    }
+});
+</script>
 </body>
 </html>
