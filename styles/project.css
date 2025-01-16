@@ -45,10 +45,25 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .logo {
     position: absolute;
     left: 45%;
     top: 3%;
+}
+
+.overview {
+    outline: dimgray 1px solid;
+    border-radius: 50px;
+    display: flex;
+    padding: 30px;
+    max-width: 70vw;
+    flex-direction: column;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 20px;
 }
