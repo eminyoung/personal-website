@@ -63,7 +63,31 @@ body {
     flex-direction: column;
 }
 
+.overview p {
+    line-height: 1.8;
+}
 dt {
     font-weight: bold;
     margin-top: 20px;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+ul {
+    padding: 30px;
+}
+.side {
+    max-width: 70vw;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+video, img {
+    border-radius: 50px;
+    width: 35vw;
 }

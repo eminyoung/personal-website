@@ -20,21 +20,84 @@
     </div>
 
     <div class="container">
-        <div class="overview">
-                <h2>Popsign</h2>
-                <h5>Team</h5><p> 2 UI designers, 3 UX researchers, 2 developers</p>
-                <p>Duration: November 2024</p>
-                <p>Contribution: develop different iterations of potential redesign for shoot button</p>
-                <p>Tools: Figma</p>
+        <div class="side">
+            <img src="../../img/design/popsign.png" alt="different iterations of popsign redesign" style="width:50%;">
+
+            <div class="overview">
+                <h1>PopsignAI Redesign</h1>
+                <dl>
+                    <dt>Team:</dt>
+                    <dd>2 UI designers, 3 UX researchers, 2 developers</dd>
+                    <dt>Duration:</dt>
+                    <dd>November 2024</dd>
+                    <dt>Contribution:</dt>
+                    <dd>Design different iterations of shoot button</dd>
+                    <dt>Tools: </dt>
+                    <dd>Figma</dd>
+                </dl>
+            </div>
         </div>
         <div class="overview">
-            <h3>Research</h3>
+            <h2>Context</h2>
+            <p>PopSignAI is an educational bubble shooter game developed by the Georgia Institute of Technology and RIT/NTID’s Center on Access Technology.
+                The game teaches over 500 American Sign Language (ASL) signs by allowing the users to sign.</p>
+        </div>
+        <div class="overview">
+            <h2>Research</h2>
             <h4>Main Points</h4>
+            <p>Our team's UX researchers conducted user testing on Popsign's shooting mechanics. The main points of feedback included:</p>
+            <div class="side">
+                <div style="top: 30%;">
+                    <h2>01</h2>
+                    <strong>Location of shoot button:</strong>
+                    <p> many users had difficulty locating the button at the very bottom of the screen</p>
+                </div>
+                <img src="../../img/design/old_popsign.png" alt="old popsign design" style="width:25%;border-radius:0px;">
+                <div>
+                    <h2>02</h2>
+                    <strong>Color of shoot button:</strong>
+                    <p>users found it challenging to read the text against the bright green button</p>
+                </div>
+            </div>
+
             <h4>Analysis</h4>
+            <p>Given these feedbacks, I identified some additional issues and brainstormed possible fixes. </p>
+            <div class="side">
+                <dl>
+                    <dt>Position:</dt>
+                    <dd>The bottom of the screen is too clustered.
+                        We can move the shoot button up to make it clear and avoid user fingers from covering it up while playing the game.</dd>
+                    <dt>Arrow button position:</dt>
+                    <dd>The arrow buttons also overlap with the background trees. Outlining it can help create a separation between background and button.</dd>
+                </dl>
+                <dl>
+                    <dt>Color:</dt>
+                    <dd>The green of the shoot button seemed to blend in with the cool purple color of the cannon. By creating an outline around the button, the shoot button can be more visible.</dd>
+                    <dt>Arrow button design:</dt>
+                    <dd>Although the arrow buttons rotate the cannon, the current arrow button designs make it seem like the cannon will move left to right.</dd>
+                </dl>
+                <dl>
+                    <dt>Shape:</dt>
+                    <dd>The multiple circular shapes on screen made it difficult for the shoot button to stand out. We can try changing the shoot button to a rectangular shape.</dd>
+                    <dt>Association between button and cannon:</dt>
+                    <dd>The shoot button is awkwardly placed on top of the cannon, making the connection between the cannon and the shoot button weak.</dd>
+                </dl>
+            </div>
         </div>
         <div class="overview">
-            <h3>Design</h3>
+            <h2>Design</h2>
             <h4>Iterations</h4>
+            <p>In Figma, I then created different iterations that combined these solutions. </p>
+            <img src="../../img/design/popsign_iterations.png" alt="different iterations of popsign redesign" style="width:100%;border-radius:0px;">
+            <p>The main fixes that I implemented were</p>
+                <ul>
+                    <li>Make the association between cannon and button stronger</li>
+                    <li>Outline the buttons</li>
+                    <li>Change arrow shape to make it look like rotations</li>
+                    <li>Move the buttons up considering people hand placement</li>
+                    <li>Create two different states to indicate when it is ready to shoot the bubble</li>
+                </ul>
+            <p>After showcasing these iterations to the developers and UX researchers, our team most favorably chose the second design and the last design</p>
         </div>
     </div>
 
